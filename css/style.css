@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+html {
+  font-size: 14px;
+}
+
+body {
+  height: 600px;
+  background-image: url("../images/bg-mobile.png");
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sec1 {
+  background-color: #1d2c67;
+  width: 23rem;
+  height: 12rem;
+  margin: 3rem;
+  margin-left: 1.5rem;
+  padding-left: 0.9rem;
+  margin-top: 5rem;
+  border-top-right-radius: 5rem;
+}
+
+.sec1 :first-child {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  margin-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.sec1 :nth-child(2) {
+  display: inline;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  padding-left: 2rem;
+  padding: 0.8rem;
+  background-color: black;
+  border-radius: 0.5rem;
+}
+
+.sec1 :nth-child(3) {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  padding: 0.7rem;
+  margin-left: 4rem;
+  padding-top: 1rem;
+  background-color: black;
+  border-radius: 0.5rem;
+}
+
+.sec1 :nth-child(4) {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  padding: 0.7rem;
+  margin-left: 8rem;
+  padding-top: 1.2rem;
+  background-color: black;
+  border-radius: 0.5rem;
+}
+
+.sec2 {
+  background-color: #1d2c67;
+  width: 23rem;
+  height: 10rem;
+  margin: 3rem;
+  margin-left: 1.5rem;
+  margin-top: 5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+.sec2 span {
+  font-weight: 700;
+}
+
+.sec2 .container {
+  background-color: #1d2c67;
+  width: 50%;
+  border-radius: 15px;
+  border-left: 2rem;
+  text-align: center;
+  padding-left: 3rem;
+}
+
+.sec2 .skill {
+  background-color: palevioletred;
+  color: white;
+  border-left: 2rem;
+  padding: 1%;
+  text-align: right;
+  font-size: 0.5rem;
+  border-radius: 15px;
+}
+
+.sec3 {
+  position: absolute;
+  top: 27rem;
+  left: 7rem;
+  background-color: white;
+  height: 4rem;
+  width: 10rem;
+  border-radius: 0.3rem;
+  margin: 3rem;
+  padding-left: 1rem;
+  margin-left: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  color: #dddbff;
+}
+
+.sec3 span {
+  font-size: 1.3rem;
+  color: black;
+}
+
+.attribution {
+  color: white;
+  -webkit-text-decoration: white;
+          text-decoration: white;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    height: 600px;
+    background-color: #1d2c67;
+    background-image: url("../images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: auto 39rem;
+  }
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[1];
+        grid-template-rows: repeat(1, 1fr);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .sec1 {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    width: 1rem;
+    margin-left: 6.5rem;
+    margin-bottom: 5rem;
+    background-color: #0c122c;
+    padding-left: 18.9rem;
+  }
+  .sec1 :first-child {
+    position: absolute;
+    left: 8rem;
+  }
+  .sec1 :nth-child(2) {
+    position: absolute;
+    left: 8rem;
+    top: 13rem;
+  }
+  .sec1 :nth-child(3) {
+    position: absolute;
+    left: 10rem;
+    top: 13rem;
+  }
+  .sec1 :nth-child(4) {
+    position: absolute;
+    left: 12rem;
+    top: 13rem;
+  }
+  .sec2 {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    margin-left: 39.5rem;
+    margin-top: -15rem;
+    background-color: #0c122c;
+  }
+  .sec2 .container {
+    background-color: #0c122c;
+    width: 60%;
+  }
+  .sec3 {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    margin-left: 39.5rem;
+    margin-top: -12rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
